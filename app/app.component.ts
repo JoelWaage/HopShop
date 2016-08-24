@@ -6,6 +6,7 @@ import { Keg } from './keg.model';
   selector: 'my-app',
   directives: [KegListComponent],
   template: `
+  <img src="./resources/images/wall.jpg" class="img-responsive">
     <div class="container">
       <h1>Kegs:</h1>
       <keg-list
