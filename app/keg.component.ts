@@ -1,4 +1,4 @@
-import { Component } from 'angular2/core';
+import { Component, EventEmitter } from 'angular2/core';
 import { Keg } from './keg.model';
 
 @Component({
@@ -6,12 +6,13 @@ import { Keg } from './keg.model';
   inputs: ['keg'],
   template: `
     <div class="list">
-      <h3>{{ keg.name }}  -  $ {{ keg.price }}</h3>
+      <h2>{{ keg.name }}</h2>
+      <h4>$ {{ keg.price }}</h4>
       <ul>
         <li>Brewery: {{ keg.brewery }}</li>
         <li>ABV: {{ keg.abv }} %</li>
       </ul>
-  </div>
+    </div>
   `
 })
 export class KegComponent {

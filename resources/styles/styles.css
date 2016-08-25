@@ -4,15 +4,16 @@ body {
 
 h1 {
   color:#c2c2d6;
-  font-size: 3.1em;
   font-weight: bolder;
 }
 
+li {
+  font-size: 0.7em;
+}
+
 .display {
-  font-size: 1.4;
-  padding-left: 60px;
-  margin-top: 40px;
-  color:#008066;
+  font-size: 2em;
+  color: #008066
 }
 
 .selected {
@@ -29,4 +30,45 @@ h1 {
 
 .test {
   color: black;
+}
+
+.remain {
+  background-color: #008066;
+  color: #3d3d5c;
+}
+
+.wall {
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+@media(max-width: 1025px) {
+  .case {
+    display: none;
+  }
+
+  .wall {
+    float: right;
+    width: 50%;
+  }
+}
+
+
+@media(max-width: 767px) {
+  .display {
+    font-size: 1.4em;
+    padding-left: 60px;
+    color:#008066;
+  }
+
+  .wall {
+    width: 100%;
+    height: auto;
+  }
+
+  .selected {
+    color: #22bdf0;
+  }
+
 }

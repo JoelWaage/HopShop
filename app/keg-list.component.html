@@ -1,4 +1,4 @@
-<div class="rows">
+<div class="row">
   <div class="col-md-6">
     <keg-display *ngFor="#currentKeg of kegList"
       (click)="kegClicked(currentKeg)"
@@ -7,7 +7,8 @@
       [keg]="currentKeg">
     </keg-display>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
     <new-keg (onSubmitNewKeg)="createKeg($event)"></new-keg>
+    <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg"></edit-keg-details>
   </div>
 </div>
